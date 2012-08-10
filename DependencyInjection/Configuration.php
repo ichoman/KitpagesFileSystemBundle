@@ -52,9 +52,11 @@ class Configuration implements ConfigurationInterface
         $adapterNodeBuilder = $node
             ->children()
                 ->arrayNode('file_system_list')
+                    ->useAttributeAsKey('filesystem')
                     ->prototype('array')
-                        ->performNoDeepMerging()
-                            ->children()
+                    ->useAttributeAsKey('adapter')
+                    ->performNoDeepMerging()
+                    ->children()                
         ;
 
         foreach ($factories as $name => $factory) {
