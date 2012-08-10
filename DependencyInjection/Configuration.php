@@ -51,7 +51,8 @@ class Configuration implements ConfigurationInterface
     {
         $adapterNodeBuilder = $node
             ->children()
-                ->arrayNode('file_system_list')                    
+                ->arrayNode('file_system_list')    
+                    ->fixXmlConfig('file_system_list')
                     ->prototype('array')
                     ->useAttributeAsKey('adapter')
                     ->performNoDeepMerging()
