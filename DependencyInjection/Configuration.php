@@ -53,6 +53,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->arrayNode('file_system_list')    
                     ->fixXmlConfig('file_system_list')
+                    ->useAttributeAsKey('id')
                     ->prototype('array')
                     ->performNoDeepMerging()
                     ->children()                
