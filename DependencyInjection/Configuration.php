@@ -54,7 +54,6 @@ class Configuration implements ConfigurationInterface
                 ->arrayNode('file_system_list')    
                     ->fixXmlConfig('file_system_list')
                     ->prototype('array')
-                    ->useAttributeAsKey('adapter')
                     ->performNoDeepMerging()
                     ->children()                
         ;
