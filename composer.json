@@ -1,5 +1,5 @@
 {
-    "name": "kitpages/file-system-bundle",
+    "name": "ichoman/kitpages-file-system-bundle",
     "type": "symfony-bundle",
     "description": "Symfony Kitpages FileSystem Bundle. Abstraction layer for files (local, S3)",
     "keywords": ["FileSystem", "File abstraction layer", "gaufrette"],
