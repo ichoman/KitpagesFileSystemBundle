@@ -52,7 +52,7 @@ class Configuration implements ConfigurationInterface
         $adapterNodeBuilder = $node
             ->children()
                 ->arrayNode('file_system_list')                    
-                    ->useAttributeAsKey('id')
+                    ->useAttributeAsKey()
                     ->prototype('array')
                     ->useAttributeAsKey('adapter')
                     ->performNoDeepMerging()
